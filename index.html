@@ -1,1 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio | PortfolioHUB</title>
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1020;
+            color: #f5f5ff;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #10172b;
+            border-bottom: 1px solid #252d48;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+            color: #a78bfa;
+        }
+
+        nav a {
+            color: #d5d9e8;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #a78bfa;
+        }
+
+        .hero {
+            min-height: 430px;
+            padding: 100px 8%;
+            background: radial-gradient(
+                circle at top right,
+                #312064,
+                #0b1020 60%
+            );
+        }
+
+        .hero h1 {
+            font-size: clamp(32px, 5vw, 52px);
+            max-width: 700px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .destaque {
+            color: #a78bfa;
+        }
+
+        .hero p {
+            color: #b8bfd5;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        .botao {
+            display: inline-block;
+            padding: 12px 22px;
+            background: #7c3aed;
+            color: white;
+            text-decoration: none;
+            border-radius: 9px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background: #9333ea;
+            transform: translateY(-3px);
+        }
+
+        section {
+            padding: 65px 8%;
+        }
+
+        .titulo {
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .descricao {
+            color: #aab3cc;
+            margin-bottom: 30px;
+        }
+
+        .sobre {
+            background: #10172b;
+        }
+
+        .projetos {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(220px, 1fr)
+            );
+            gap: 22px;
+        }
+
+        .card {
+            background: #151e35;
+            border: 1px solid #293453;
+            border-radius: 15px;
+            padding: 25px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: #8b5cf6;
+        }
+
+        .card h3 {
+            color: #c4b5fd;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #b8bfd5;
+            margin-bottom: 18px;
+        }
+
+        .contato {
+            text-align: center;
+            background: #10172b;
+        }
+
+        footer {
+            padding: 25px;
+            text-align: center;
+            color: #8993ad;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 6px;
+                font-size: 14px;
+            }
+
+            .hero {
+                padding-top: 70px;
+                padding-bottom: 70px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">PortfolioHUB.</div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <h1>
+                Olá! Sou estudante de
+                <span class="destaque">Ciência da Computação</span>
+            </h1>
+
+            <p>
+                Explorando o mundo da programação, da tecnologia
+                e do desenvolvimento de soluções digitais.
+                Este é o meu espaço para apresentar meus projetos
+                e minha evolução.
+            </p>
+
+            <a href="#projetos" class="botao">
+                Conheça meus projetos →
+            </a>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <h2 class="titulo">Sobre mim</h2>
+
+            <p class="descricao">
+                Sou estudante de Ciência da Computação e tenho
+                interesse em programação, redes de computadores
+                e desenvolvimento de sistemas. Estou sempre
+                buscando aprender e colocar meus conhecimentos
+                em prática.
+            </p>
+        </section>
+
+        <section id="projetos">
+            <h2 class="titulo">Meus projetos</h2>
+
+            <p class="descricao">
+                Conheça alguns dos projetos que desenvolvo
+                durante minha jornada na tecnologia.
+            </p>
+
+            <div class="projetos">
+                <article class="card">
+                    <h3>💻 Projetos acadêmicos</h3>
+                    <p>
+                        Trabalhos e atividades desenvolvidos
+                        durante meus estudos.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>🚀 Projetos pessoais</h3>
+                    <p>
+                        Ideias próprias e experiências práticas
+                        com tecnologia.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>🐍 Python</h3>
+                    <p>
+                        Exercícios e programas desenvolvidos
+                        para praticar lógica de programação.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contato" id="contato">
+            <h2 class="titulo">Vamos nos conectar?</h2>
+
+            <p class="descricao">
+                Acompanhe meus estudos e projetos.
+            </p>
+
+            <a
+                href="https://github.com/"
+                class="botao"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Meu GitHub
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        © 2026 PortfolioHUB — Desenvolvido com HTML e CSS.
+    </footer>
+
+</body>
+</html>
